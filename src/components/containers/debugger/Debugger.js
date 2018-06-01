@@ -6,7 +6,7 @@ export default class Debugger extends Component {
   render() {
     return (
       <View>
-        <Text>Debugger</Text>
+        <Text>Debugger Wallaby</Text>
       </View>
     )
   }

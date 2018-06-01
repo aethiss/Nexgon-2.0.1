@@ -7,7 +7,7 @@ exports[`<Debugger> renders correctly 1`] = `
     allowFontScaling={true}
     ellipsizeMode="tail"
   >
-    Debugger
+    Debugger Wallaby
   </Text>
 </View>
 `;

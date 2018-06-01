@@ -13,7 +13,7 @@ React-Native Personal Project
     - Decorator support (https://medium.com/@ivanzotov/adding-es7-decorator-support-to-a-react-native-project-de537e958da0)
 
 3) Jest + Wallaby
-    - wallaby :(
+   - Done  
 
 4) Redux Store
 

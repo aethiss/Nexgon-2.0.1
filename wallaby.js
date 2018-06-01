@@ -22,14 +22,7 @@ module.exports = function (wallaby) {
 
     compilers: {
       '**/*.js': wallaby.compilers.babel({
-        presets: [
-          'react-native'
-        ],
-        plugins: [
-          'transform-flow-strip-types',
-          'transform-object-rest-spread',
-          'transform-async-to-generator',
-        ],
+        babel: require('babel-core')
       }),
     },
 
