@@ -1,16 +1,19 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
+ * Enzo React-Native Idea
  * @flow
  */
 
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {
   Platform,
   StyleSheet,
   Text,
-  View
-} from 'react-native';
+  View,
+} from 'react-native'
+import SplashScreen from 'react-native-splash-screen'
+
+// Components - Test
+import Debugger from "./src/components/containers/debugger/Debugger"
 
 const instructions = Platform.select({
   ios: 'Press Cmd+R to reload,\n' +
@@ -19,8 +22,12 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 });
 
-type Props = {};
+type Props = {}
 export default class App extends Component<Props> {
+  componentDidMount() {
+    SplashScreen.hide()
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -33,8 +40,9 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           {instructions}
         </Text>
+        <Debugger/>
       </View>
-    );
+    )
   }
 }
 
@@ -55,4 +63,4 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
-});
+})
