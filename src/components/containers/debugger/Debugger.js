@@ -19,7 +19,6 @@ export default class AnatomyExample extends Component {
 
   render() {
     const { user } = this.props
-    console.log('user : ', user)
     return (
       <Container>
         <Header>
