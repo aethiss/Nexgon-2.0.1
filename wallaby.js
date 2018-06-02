@@ -1,12 +1,9 @@
-// process.env.NODE_ENV = 'test'
-// const babelConfig = JSON.parse(require('fs').readFileSync(require('path').join(__dirname, '.babelrc')))
-
 /* eslint-disable */
 module.exports = function (wallaby) {
   return {
     files: [
-      { pattern: 'src/**/*.spec.js?(x)', ignore: true },
       { pattern: 'src/**/*.js?(x)', instrument: true, load: false, ignore: false },
+      { pattern: 'src/**/*.spec.js?(x)', ignore: true },
       'src/**/*.snap'
     ],
     tests: [

@@ -1,66 +1,40 @@
 /**
- * Enzo React-Native Idea
+ * NextGon React Native App
  * @flow
  */
 
 import React, { Component } from 'react'
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-} from 'react-native'
+
+// Styles
 import SplashScreen from 'react-native-splash-screen'
+import { StyleProvider, Root } from 'native-base'
+// import { View, Text } from 'react-native'
 
-// Components - Test
-import Debugger from "./src/components/containers/debugger/Debugger"
+// Redux / Store
+import { Provider } from 'react-redux'
+import configureStore from './src/redux/lib/ConfigureStore'
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
+import getTheme from './native-base-theme/components'
+import platform from './native-base-theme/variables/platform'
 
-type Props = {}
-export default class App extends Component<Props> {
+// Test Component
+import Debugger from './src/components/containers/debugger/Debugger'
+
+export default class NexGon extends Component {
   componentDidMount() {
     SplashScreen.hide()
   }
 
   render() {
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>
-          Welcome to React Native!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        <Text style={styles.instructions}>
-          {instructions}
-        </Text>
-        <Debugger/>
-      </View>
+      <Provider store={configureStore()}>
+        <StyleProvider style={getTheme(platform)}>
+          <Root>
+            <Debugger />
+          </Root>
+        </StyleProvider>
+      </Provider>
     )
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-})
