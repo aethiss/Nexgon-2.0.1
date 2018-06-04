@@ -1,7 +1,7 @@
 import { createReducer } from '../../lib/ReducerHelper'
 
 const initialState = {
-  user: false,
+  user: '',
   authorized: false,
   country: false,
   number: false,
@@ -9,6 +9,13 @@ const initialState = {
 
 const authReducer = createReducer(initialState, {
   RESET_AUTH: () => initialState,
+  SET_AUTH: (currentState, { user }) => (
+    {
+      ...currentState,
+      authorized: true,
+      user: { ...user },
+    }
+  ),
 })
 
 export default authReducer

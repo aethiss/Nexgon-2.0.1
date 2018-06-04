@@ -17,8 +17,8 @@ import configureStore from './src/redux/lib/ConfigureStore'
 import getTheme from './native-base-theme/components'
 import platform from './native-base-theme/variables/platform'
 
-// Test Component
-import Debugger from './src/components/containers/debugger/Debugger'
+// Routing
+import LoginStackRouter from './src/routers/LoginStackRouter'
 
 export default class NexGon extends Component {
   componentDidMount() {
@@ -30,7 +30,7 @@ export default class NexGon extends Component {
       <Provider store={configureStore()}>
         <StyleProvider style={getTheme(platform)}>
           <Root>
-            <Debugger />
+            <LoginStackRouter />
           </Root>
         </StyleProvider>
       </Provider>

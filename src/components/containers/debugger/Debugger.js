@@ -3,7 +3,7 @@ import PropsTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 // Style
-import { Container, Header, Title, Content, Footer, FooterTab, Button, Left, Right, Body, Icon, Text } from 'native-base'
+import { Container, Content, Footer, FooterTab, Button, Text } from 'native-base'
 
 @connect(state => ({
   user: state.auth.user,
@@ -21,27 +21,10 @@ export default class AnatomyExample extends Component {
     const { user } = this.props
     return (
       <Container>
-        <Header>
-          <Left>
-            <Button transparent>
-              <Icon name="menu" />
-            </Button>
-          </Left>
-          <Body>
-            <Title>Header</Title>
-          </Body>
-          <Right />
-        </Header>
         <Content>
           <Text>
-            This is Content Section
+            Debugger: {user}
           </Text>
-          {
-            !user &&
-            <Text>
-              No user connected !
-            </Text>
-          }
         </Content>
         <Footer>
           <FooterTab>
