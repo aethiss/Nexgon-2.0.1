@@ -20,29 +20,9 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Header)>
-          <Styled(Left)>
-            <Styled(Button)
-              transparent={true}
-            >
-              <Styled(Icon)
-                name="menu"
-              />
-            </Styled(Button)>
-          </Styled(Left)>
-          <Styled(Body)>
-            <Styled(Title)>
-              Header
-            </Styled(Title)>
-          </Styled(Body)>
-          <Styled(Right) />
-        </Styled(Header)>,
         <Styled(Content)>
           <Styled(Text)>
-            This is Content Section
-          </Styled(Text)>
-          <Styled(Text)>
-            No user connected !
+            Debugger: 
           </Styled(Text)>
         </Styled(Content)>,
         <Styled(Footer)>
@@ -66,151 +46,30 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": Array [
-            <Styled(Left)>
-              <Styled(Button)
-                transparent={true}
-              >
-                <Styled(Icon)
-                  name="menu"
-                />
-              </Styled(Button)>
-            </Styled(Left)>,
-            <Styled(Body)>
-              <Styled(Title)>
-                Header
-              </Styled(Title)>
-            </Styled(Body)>,
-            <Styled(Right) />,
-          ],
+          "children": <Styled(Text)>
+            Debugger: 
+          </Styled(Text)>,
           "virtual": undefined,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Button)
-                transparent={true}
-              >
-                <Styled(Icon)
-                  name="menu"
-                />
-              </Styled(Button)>,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Icon)
-                  name="menu"
-                />,
-                "transparent": true,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "name": "menu",
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": null,
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Debugger: ",
+              false,
+            ],
+            "virtual": undefined,
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Title)>
-                Header
-              </Styled(Title)>,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Header",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "Header",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Text)>
-              This is Content Section
-            </Styled(Text)>,
-            <Styled(Text)>
-              No user connected !
-            </Styled(Text)>,
+          "ref": null,
+          "rendered": Array [
+            "Debugger: ",
+            false,
           ],
-          "virtual": undefined,
+          "type": [Function],
         },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "This is Content Section",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "This is Content Section",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "No user connected !",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "No user connected !",
-            "type": [Function],
-          },
-        ],
         "type": [Function],
       },
       Object {
@@ -285,29 +144,9 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Header)>
-            <Styled(Left)>
-              <Styled(Button)
-                transparent={true}
-              >
-                <Styled(Icon)
-                  name="menu"
-                />
-              </Styled(Button)>
-            </Styled(Left)>
-            <Styled(Body)>
-              <Styled(Title)>
-                Header
-              </Styled(Title)>
-            </Styled(Body)>
-            <Styled(Right) />
-          </Styled(Header)>,
           <Styled(Content)>
             <Styled(Text)>
-              This is Content Section
-            </Styled(Text)>
-            <Styled(Text)>
-              No user connected !
+              Debugger: 
             </Styled(Text)>
           </Styled(Content)>,
           <Styled(Footer)>
@@ -331,151 +170,30 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Styled(Left)>
-                <Styled(Button)
-                  transparent={true}
-                >
-                  <Styled(Icon)
-                    name="menu"
-                  />
-                </Styled(Button)>
-              </Styled(Left)>,
-              <Styled(Body)>
-                <Styled(Title)>
-                  Header
-                </Styled(Title)>
-              </Styled(Body)>,
-              <Styled(Right) />,
-            ],
+            "children": <Styled(Text)>
+              Debugger: 
+            </Styled(Text)>,
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Button)
-                  transparent={true}
-                >
-                  <Styled(Icon)
-                    name="menu"
-                  />
-                </Styled(Button)>,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <Styled(Icon)
-                    name="menu"
-                  />,
-                  "transparent": true,
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "name": "menu",
-                    "virtual": undefined,
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Debugger: ",
+                false,
+              ],
+              "virtual": undefined,
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Title)>
-                  Header
-                </Styled(Title)>,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": "Header",
-                  "virtual": undefined,
-                },
-                "ref": null,
-                "rendered": "Header",
-                "type": [Function],
-              },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-          ],
-          "type": [Function],
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "class",
-          "props": Object {
-            "children": Array [
-              <Styled(Text)>
-                This is Content Section
-              </Styled(Text)>,
-              <Styled(Text)>
-                No user connected !
-              </Styled(Text)>,
+            "ref": null,
+            "rendered": Array [
+              "Debugger: ",
+              false,
             ],
-            "virtual": undefined,
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "This is Content Section",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "This is Content Section",
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "No user connected !",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "No user connected !",
-              "type": [Function],
-            },
-          ],
           "type": [Function],
         },
         Object {
@@ -562,331 +280,4 @@ ShallowWrapper {
     },
   },
 }
-`;
-
-exports[`<Debugger> renders correctly 1`] = `
-<View
-  style={
-    Object {
-      "flex": 1,
-      "height": 1334,
-    }
-  }
->
-  <View>
-    <View
-      style={
-        Object {
-          "backgroundColor": "#F8F8F8",
-          "borderBottomColor": "#a7a6ab",
-          "borderBottomWidth": 0.5,
-          "elevation": 3,
-          "flexDirection": "row",
-          "height": 64,
-          "justifyContent": "center",
-          "left": 0,
-          "paddingLeft": 6,
-          "paddingRight": 10,
-          "paddingTop": 18,
-          "right": 0,
-          "shadowColor": undefined,
-          "shadowOffset": undefined,
-          "shadowOpacity": undefined,
-          "shadowRadius": undefined,
-          "top": 0,
-        }
-      }
-    >
-      <View
-        style={
-          Object {
-            "alignItems": "flex-start",
-            "alignSelf": "center",
-            "flex": 1,
-          }
-        }
-      >
-        <View
-          accessible={true}
-          isTVSelectable={true}
-          onResponderGrant={[Function]}
-          onResponderMove={[Function]}
-          onResponderRelease={[Function]}
-          onResponderTerminate={[Function]}
-          onResponderTerminationRequest={[Function]}
-          onStartShouldSetResponder={[Function]}
-          style={
-            Object {
-              "alignItems": "center",
-              "alignSelf": null,
-              "backgroundColor": "transparent",
-              "borderBottomWidth": null,
-              "borderColor": null,
-              "borderLeftWidth": null,
-              "borderRadius": 5,
-              "borderRightWidth": null,
-              "borderTopWidth": null,
-              "elevation": 0,
-              "flexDirection": "row",
-              "height": 45,
-              "justifyContent": "space-between",
-              "marginLeft": -3,
-              "opacity": 1,
-              "paddingBottom": 6,
-              "paddingLeft": 4,
-              "paddingRight": 6,
-              "paddingTop": 6,
-              "shadowColor": null,
-              "shadowOffset": null,
-              "shadowOpacity": null,
-              "shadowRadius": null,
-            }
-          }
-        >
-          <Text
-            accessible={true}
-            allowFontScaling={false}
-            ellipsizeMode="tail"
-            style={
-              Array [
-                Object {
-                  "color": undefined,
-                  "fontSize": 12,
-                },
-                Array [
-                  Object {
-                    "color": "#000",
-                    "fontSize": 30,
-                  },
-                  Object {
-                    "color": "#007aff",
-                    "fontSize": 34,
-                    "marginLeft": 1,
-                    "marginRight": 2,
-                    "marginTop": 0,
-                    "paddingTop": 1,
-                  },
-                ],
-                Object {
-                  "fontFamily": "Ionicons",
-                  "fontStyle": "normal",
-                  "fontWeight": "normal",
-                },
-              ]
-            }
-          >
-            
-          </Text>
-        </View>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "center",
-            "flex": 1,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          numberOfLines={1}
-          style={
-            Object {
-              "color": "#000",
-              "fontFamily": "System",
-              "fontSize": 17,
-              "fontWeight": "700",
-              "marginLeft": undefined,
-              "paddingLeft": 4,
-              "paddingTop": 1,
-              "textAlign": "center",
-            }
-          }
-        >
-          Header
-        </Text>
-      </View>
-      <View
-        style={
-          Object {
-            "alignItems": "flex-end",
-            "alignSelf": "center",
-            "flex": 1,
-            "flexDirection": "row",
-            "justifyContent": "flex-end",
-          }
-        }
-      />
-    </View>
-  </View>
-  <RCTScrollView
-    automaticallyAdjustContentInsets={false}
-    contentContainerStyle={
-      Array [
-        Object {
-          "padding": undefined,
-        },
-        undefined,
-      ]
-    }
-    contentInset={
-      Object {
-        "bottom": 0,
-      }
-    }
-    enableAutomaticScroll={true}
-    enableResetScrollToCoords={true}
-    extraHeight={75}
-    extraScrollHeight={0}
-    getScrollResponder={[Function]}
-    handleOnScroll={[Function]}
-    keyboardDismissMode="interactive"
-    keyboardOpeningTime={250}
-    keyboardShouldPersistTaps="handled"
-    keyboardSpace={0}
-    onScroll={[Function]}
-    resetKeyboardSpace={[Function]}
-    resetScrollToCoords={
-      Object {
-        "x": 0,
-        "y": 0,
-      }
-    }
-    scrollEventThrottle={1}
-    scrollForExtraHeightOnAndroid={[Function]}
-    scrollToEnd={[Function]}
-    scrollToFocusedInput={[Function]}
-    scrollToPosition={[Function]}
-    showsVerticalScrollIndicator={true}
-    style={
-      Object {
-        "backgroundColor": "transparent",
-        "flex": 1,
-      }
-    }
-    viewIsInsideTabBar={false}
-  >
-    <View>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#000",
-            "fontFamily": "System",
-            "fontSize": 16,
-          }
-        }
-        uppercase={false}
-      >
-        This is Content Section
-      </Text>
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        ellipsizeMode="tail"
-        style={
-          Object {
-            "color": "#000",
-            "fontFamily": "System",
-            "fontSize": 16,
-          }
-        }
-        uppercase={false}
-      >
-        No user connected !
-      </Text>
-    </View>
-  </RCTScrollView>
-  <View
-    style={
-      Object {
-        "backgroundColor": "#F8F8F8",
-        "borderColor": "#cbcbcb",
-        "borderTopWidth": 0.5,
-        "elevation": 3,
-        "flexDirection": "row",
-        "height": 55,
-        "justifyContent": "center",
-        "left": 0,
-        "paddingBottom": 0,
-        "right": 0,
-      }
-    }
-  >
-    <View
-      style={
-        Object {
-          "alignSelf": "stretch",
-          "backgroundColor": undefined,
-          "flex": 1,
-          "flexDirection": "row",
-          "justifyContent": "space-between",
-        }
-      }
-    >
-      <View
-        accessible={true}
-        isTVSelectable={true}
-        onResponderGrant={[Function]}
-        onResponderMove={[Function]}
-        onResponderRelease={[Function]}
-        onResponderTerminate={[Function]}
-        onResponderTerminationRequest={[Function]}
-        onStartShouldSetResponder={[Function]}
-        style={
-          Object {
-            "alignItems": "center",
-            "alignSelf": "stretch",
-            "backgroundColor": "transparent",
-            "borderBottomWidth": null,
-            "borderColor": null,
-            "borderLeftWidth": null,
-            "borderRadius": 0,
-            "borderRightWidth": null,
-            "borderTopWidth": null,
-            "elevation": 0,
-            "flex": 1,
-            "flexDirection": null,
-            "height": 55,
-            "justifyContent": "center",
-            "opacity": 1,
-            "paddingBottom": 6,
-            "paddingTop": 6,
-            "shadowColor": null,
-            "shadowOffset": null,
-            "shadowOpacity": null,
-            "shadowRadius": null,
-          }
-        }
-      >
-        <Text
-          accessible={true}
-          allowFontScaling={true}
-          ellipsizeMode="tail"
-          style={
-            Object {
-              "backgroundColor": "transparent",
-              "color": "#6b6b6b",
-              "fontFamily": "System",
-              "fontSize": 14,
-              "lineHeight": 16,
-              "marginLeft": 0,
-              "marginRight": 0,
-              "paddingLeft": 16,
-              "paddingRight": 16,
-            }
-          }
-          uppercase={false}
-        >
-          Footer
-        </Text>
-      </View>
-    </View>
-  </View>
-</View>
 `;
