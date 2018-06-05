@@ -1,15 +1,17 @@
 import { createStackNavigator } from 'react-navigation'
 
+// Routing
+import MainTabRouter from './MainTabRouter'
+
 // ScreenViews
 import LoginScreenView from '../components/screens/LoginScreenView'
-import DashBoardsScreenView from '../components/screens/DashBoardsScreenView'
 
 export default createStackNavigator({
   Login: {
     screen: LoginScreenView,
   },
   DashBoard: {
-    screen: DashBoardsScreenView,
+    screen: MainTabRouter,
   },
 }, {
   headerMode: 'none',

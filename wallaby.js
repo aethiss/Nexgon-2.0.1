@@ -2,12 +2,12 @@
 module.exports = function (wallaby) {
   return {
     files: [
-      { pattern: 'src/redux/**/*.js?(x)', instrument: true, load: false, ignore: false },
+      { pattern: 'src/**/*.js?(x)', instrument: true, load: false, ignore: false },
       { pattern: 'src/**/*.spec.js?(x)', ignore: true },
       'src/**/*.snap'
     ],
     tests: [
-      'src/redux/**/__tests__/*.spec.js?(x)'
+      'src/**/__tests__/*.spec.js?(x)'
     ],
 
     env: {

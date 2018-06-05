@@ -21,4 +21,22 @@ React-Native Personal Project
 
 6) Native Base ✔ (v0.6)
 
-7) Route Navigation
+7) Route Navigation ✔ (v0.7)
+    - https://reactnavigation.org/docs/en/getting-started.html
+
+8) Tab Navigation (Login/Register/Dashboard/Debugger) ✔
+
+9) Registration (FB login) / Login
+
+10) Permanent Local Storage / Auto-Login / Debugger Clean All
+    - Add Persistent state to navigation
+
+11) Group Creation
+
+13) Maps & Locations
+
+14) RealTime Group Chat
+
+ --- TODO ---
+   
+   - Rambda ??
