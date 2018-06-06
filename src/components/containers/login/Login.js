@@ -8,6 +8,9 @@ import { Content, Text, View, Button } from 'native-base'
 // Actions
 import { loginRequest } from '../../../redux/actions/AuthActions'
 
+// Helpers
+import facebookLoginManager from '../../../libs/FacebookSDK'
+
 @connect(state => ({
   authorized: state.auth.authorized,
 }), { loginRequest })
@@ -41,7 +44,7 @@ export default class Login extends Component {
           iconLeft
           full
           info
-          onPress={() => { this.connectToNexgon() }}
+          onPress={() => { facebookLoginManager() }}
         >
           <Text>Connect To NextGon</Text>
         </Button>
