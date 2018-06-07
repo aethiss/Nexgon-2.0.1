@@ -9,7 +9,7 @@ import { Content, Text, View, Button } from 'native-base'
 import { loginRequest } from '../../../redux/actions/AuthActions'
 
 // Helpers
-import facebookLoginManager from '../../../libs/FacebookSDK'
+import { facebookLoginManager, FacebookProfile } from '../../../libs/FacebookSDK'
 
 @connect(state => ({
   authorized: state.auth.authorized,
