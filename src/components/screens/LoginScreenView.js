@@ -1,7 +1,9 @@
+/* eslint-disable no-use-before-define */
 import React from 'react'
 import PropsTypes from 'prop-types'
 
 // Style
+import { StyleSheet } from 'react-native'
 import { Container } from 'native-base'
 
 // Containers
@@ -33,3 +35,10 @@ LoginScreenView.propTypes = {
 }
 
 export default LoginScreenView
+
+// const styles = StyleSheet.create({
+//   Container: {
+//     '-webkit-flex-direction': 'column', /* Safari */
+//     'flex-direction': 'column',
+//   },
+// })

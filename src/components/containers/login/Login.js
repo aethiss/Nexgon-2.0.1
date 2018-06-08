@@ -6,24 +6,24 @@ import { connect } from 'react-redux'
 import { Content, Text, View, Button } from 'native-base'
 
 // Actions
-import { loginRequest } from '../../../redux/actions/AuthActions'
+import { facebookLoginRequest } from '../../../redux/actions/AuthActions'
 
 // Helpers
-import { facebookLoginManager, FacebookProfile } from '../../../libs/FacebookSDK'
+// import { facebookLoginManager } from '../../../libs/FacebookSDK'
 
 @connect(state => ({
   authorized: state.auth.authorized,
-}), { loginRequest })
+}), { facebookLoginRequest })
 export default class Login extends Component {
   static propTypes = {
     authorized: PropsTypes.bool,
     onLogin: PropsTypes.func.isRequired,
-    loginRequest: PropsTypes.func,
+    facebookLoginRequest: PropsTypes.func,
   }
 
   static defaultProps = {
     authorized: false,
-    loginRequest: () => {},
+    facebookLoginRequest: () => {},
   }
 
   componentWillMount() {
@@ -32,8 +32,15 @@ export default class Login extends Component {
   }
 
   connectToNexgon = () => {
-    this.props.loginRequest()
-    this.props.onLogin()
+    this.props.facebookLoginRequest()
+      .then((result) => {
+        console.log('Result :', result)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+    // this.props.loginRequest()
+    // this.props.onLogin()
   }
 
   noUserRender = () =>
@@ -41,12 +48,13 @@ export default class Login extends Component {
       <View>
         <Text>No user connected !</Text>
         <Button
+          className="button"
           iconLeft
           full
           info
-          onPress={() => { facebookLoginManager() }}
+          onPress={() => { this.connectToNexgon() }}
         >
-          <Text>Connect To NextGon</Text>
+          <Text>Connect To NextGon!</Text>
         </Button>
       </View>
     )
@@ -56,6 +64,9 @@ export default class Login extends Component {
     return (
       <Content>
         { !authorized && this.noUserRender() }
+        { authorized &&
+          <Text>Welcome User !</Text>
+        }
       </Content>
     )
   }
