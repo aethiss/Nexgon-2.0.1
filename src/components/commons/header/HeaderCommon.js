@@ -37,7 +37,7 @@ export default class HeaderCommon extends Component {
             transparent
             onPress={() => { this.leftAction() }}
           >
-            <Icon name="ios-flash" />
+            <Icon name="ios-arrow-back" />
           </Button>
         </Left>
         <Body>

@@ -28,7 +28,7 @@ describe('<Login />', () => {
   describe('Redender', () => {
     it('Default render', () => {
       const wrapper = shallow(
-        <Login />,
+        <Login onLogin={jest.fn()} />,
         { context: { store: mockStore(initialState) } },
       )
       expect(wrapper.dive()).toMatchSnapshot()
@@ -39,7 +39,7 @@ describe('<Login />', () => {
       const mocked = facebookLoginRequest.mockImplementation(() =>
         new Promise(resolve => resolve(null)))
       const wrapper = shallow(
-        <Login facebookLoginRequest={facebookLoginRequest} />,
+        <Login onLogin={jest.fn()} facebookLoginRequest={mocked} />,
         { context: { store: mockStore(initialState) } },
       ).dive()
       wrapper.setProps({ facebookLoginRequest: mocked })

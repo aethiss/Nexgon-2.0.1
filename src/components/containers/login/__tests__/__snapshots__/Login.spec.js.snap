@@ -7,6 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <Login
     authorized={false}
     facebookLoginRequest={[Function]}
+    onLogin={[MockFunction]}
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -20,129 +21,139 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": Array [
-        <Styled(ViewNB)>
-          <Styled(Text)>
-            No user connected !
-          </Styled(Text)>
+      "children": <ImageBackground
+        source={1}
+        style={
+          Object {
+            "flex": 1,
+            "height": null,
+            "width": null,
+          }
+        }
+      >
+        <Styled(ViewNB)
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginTop": 220,
+            }
+          }
+        >
+          <Image
+            source={1}
+          />
+        </Styled(ViewNB)>
+        <Styled(ViewNB)
+          style={
+            Object {
+              "marginTop": 280,
+              "padding": 10,
+            }
+          }
+        >
           <Styled(Button)
+            block={true}
             className="button"
-            full={true}
             iconLeft={true}
-            info={true}
             onPress={[Function]}
           >
+            <Styled(Icon)
+              name="logo-facebook"
+            />
             <Styled(Text)>
               Connect To NextGon!
             </Styled(Text)>
           </Styled(Button)>
-        </Styled(ViewNB)>,
-        false,
-      ],
+        </Styled(ViewNB)>
+        <Styled(ViewNB)
+          style={
+            Object {
+              "alignSelf": "center",
+            }
+          }
+        >
+          <Styled(Text)
+            style={
+              Object {
+                "color": "#FFF",
+              }
+            }
+          >
+            Login with Facebook
+          </Styled(Text)>
+        </Styled(ViewNB)>
+      </ImageBackground>,
+      "contentContainerStyle": Object {
+        "flex": 1,
+        "flexDirection": "column",
+      },
       "virtual": undefined,
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "class",
-        "props": Object {
-          "children": Array [
-            <Styled(Text)>
-              No user connected !
-            </Styled(Text)>,
-            <Styled(Button)
-              className="button"
-              full={true}
-              iconLeft={true}
-              info={true}
-              onPress={[Function]}
-            >
-              <Styled(Text)>
-                Connect To NextGon!
-              </Styled(Text)>
-            </Styled(Button)>,
-          ],
-          "virtual": undefined,
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": "No user connected !",
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": "No user connected !",
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)>
-                Connect To NextGon!
-              </Styled(Text)>,
-              "className": "button",
-              "full": true,
-              "iconLeft": true,
-              "info": true,
-              "onPress": [Function],
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "Connect To NextGon!",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "Connect To NextGon!",
-              "type": [Function],
-            },
-            "type": [Function],
-          },
-        ],
-        "type": [Function],
-      },
-      false,
-    ],
-    "type": [Function],
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(ViewNB)>
-            <Styled(Text)>
-              No user connected !
-            </Styled(Text)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginTop": 220,
+              }
+            }
+          >
+            <Image
+              source={1}
+            />
+          </Styled(ViewNB)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "marginTop": 280,
+                "padding": 10,
+              }
+            }
+          >
             <Styled(Button)
+              block={true}
               className="button"
-              full={true}
               iconLeft={true}
-              info={true}
               onPress={[Function]}
             >
+              <Styled(Icon)
+                name="logo-facebook"
+              />
               <Styled(Text)>
                 Connect To NextGon!
               </Styled(Text)>
             </Styled(Button)>
           </Styled(ViewNB)>,
-          false,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "alignSelf": "center",
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "color": "#FFF",
+                }
+              }
+            >
+              Login with Facebook
+            </Styled(Text)>
+          </Styled(ViewNB)>,
         ],
-        "virtual": undefined,
+        "source": 1,
+        "style": Object {
+          "flex": 1,
+          "height": null,
+          "width": null,
+        },
       },
       "ref": null,
       "rendered": Array [
@@ -151,55 +162,88 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              <Styled(Text)>
-                No user connected !
-              </Styled(Text)>,
-              <Styled(Button)
-                className="button"
-                full={true}
-                iconLeft={true}
-                info={true}
-                onPress={[Function]}
-              >
-                <Styled(Text)>
-                  Connect To NextGon!
-                </Styled(Text)>
-              </Styled(Button)>,
-            ],
+            "children": <Image
+              source={1}
+            />,
+            "style": Object {
+              "alignSelf": "center",
+              "marginTop": 220,
+            },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": "No user connected !",
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": "No user connected !",
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "source": 1,
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Text)>
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Button)
+              block={true}
+              className="button"
+              iconLeft={true}
+              onPress={[Function]}
+            >
+              <Styled(Icon)
+                name="logo-facebook"
+              />
+              <Styled(Text)>
+                Connect To NextGon!
+              </Styled(Text)>
+            </Styled(Button)>,
+            "style": Object {
+              "marginTop": 280,
+              "padding": 10,
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "block": true,
+              "children": Array [
+                <Styled(Icon)
+                  name="logo-facebook"
+                />,
+                <Styled(Text)>
                   Connect To NextGon!
                 </Styled(Text)>,
-                "className": "button",
-                "full": true,
-                "iconLeft": true,
-                "info": true,
-                "onPress": [Function],
-                "virtual": undefined,
+              ],
+              "className": "button",
+              "iconLeft": true,
+              "onPress": [Function],
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "name": "logo-facebook",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
               },
-              "ref": null,
-              "rendered": Object {
+              Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "class",
@@ -211,13 +255,338 @@ ShallowWrapper {
                 "rendered": "Connect To NextGon!",
                 "type": [Function],
               },
-              "type": [Function],
-            },
-          ],
+            ],
+            "type": [Function],
+          },
           "type": [Function],
         },
-        false,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Styled(Text)
+              style={
+                Object {
+                  "color": "#FFF",
+                }
+              }
+            >
+              Login with Facebook
+            </Styled(Text)>,
+            "style": Object {
+              "alignSelf": "center",
+            },
+            "virtual": undefined,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Login with Facebook",
+              "style": Object {
+                "color": "#FFF",
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": "Login with Facebook",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
       ],
+      "type": [Function],
+    },
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "children": <ImageBackground
+          source={1}
+          style={
+            Object {
+              "flex": 1,
+              "height": null,
+              "width": null,
+            }
+          }
+        >
+          <Styled(ViewNB)
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginTop": 220,
+              }
+            }
+          >
+            <Image
+              source={1}
+            />
+          </Styled(ViewNB)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "marginTop": 280,
+                "padding": 10,
+              }
+            }
+          >
+            <Styled(Button)
+              block={true}
+              className="button"
+              iconLeft={true}
+              onPress={[Function]}
+            >
+              <Styled(Icon)
+                name="logo-facebook"
+              />
+              <Styled(Text)>
+                Connect To NextGon!
+              </Styled(Text)>
+            </Styled(Button)>
+          </Styled(ViewNB)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "alignSelf": "center",
+              }
+            }
+          >
+            <Styled(Text)
+              style={
+                Object {
+                  "color": "#FFF",
+                }
+              }
+            >
+              Login with Facebook
+            </Styled(Text)>
+          </Styled(ViewNB)>
+        </ImageBackground>,
+        "contentContainerStyle": Object {
+          "flex": 1,
+          "flexDirection": "column",
+        },
+        "virtual": undefined,
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": Array [
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "alignSelf": "center",
+                  "marginTop": 220,
+                }
+              }
+            >
+              <Image
+                source={1}
+              />
+            </Styled(ViewNB)>,
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "marginTop": 280,
+                  "padding": 10,
+                }
+              }
+            >
+              <Styled(Button)
+                block={true}
+                className="button"
+                iconLeft={true}
+                onPress={[Function]}
+              >
+                <Styled(Icon)
+                  name="logo-facebook"
+                />
+                <Styled(Text)>
+                  Connect To NextGon!
+                </Styled(Text)>
+              </Styled(Button)>
+            </Styled(ViewNB)>,
+            <Styled(ViewNB)
+              style={
+                Object {
+                  "alignSelf": "center",
+                }
+              }
+            >
+              <Styled(Text)
+                style={
+                  Object {
+                    "color": "#FFF",
+                  }
+                }
+              >
+                Login with Facebook
+              </Styled(Text)>
+            </Styled(ViewNB)>,
+          ],
+          "source": 1,
+          "style": Object {
+            "flex": 1,
+            "height": null,
+            "width": null,
+          },
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Image
+                source={1}
+              />,
+              "style": Object {
+                "alignSelf": "center",
+                "marginTop": 220,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "source": 1,
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Button)
+                block={true}
+                className="button"
+                iconLeft={true}
+                onPress={[Function]}
+              >
+                <Styled(Icon)
+                  name="logo-facebook"
+                />
+                <Styled(Text)>
+                  Connect To NextGon!
+                </Styled(Text)>
+              </Styled(Button)>,
+              "style": Object {
+                "marginTop": 280,
+                "padding": 10,
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "block": true,
+                "children": Array [
+                  <Styled(Icon)
+                    name="logo-facebook"
+                  />,
+                  <Styled(Text)>
+                    Connect To NextGon!
+                  </Styled(Text)>,
+                ],
+                "className": "button",
+                "iconLeft": true,
+                "onPress": [Function],
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "name": "logo-facebook",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": "Connect To NextGon!",
+                    "virtual": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "Connect To NextGon!",
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <Styled(Text)
+                style={
+                  Object {
+                    "color": "#FFF",
+                  }
+                }
+              >
+                Login with Facebook
+              </Styled(Text)>,
+              "style": Object {
+                "alignSelf": "center",
+              },
+              "virtual": undefined,
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "Login with Facebook",
+                "style": Object {
+                  "color": "#FFF",
+                },
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "Login with Facebook",
+              "type": [Function],
+            },
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
       "type": [Function],
     },
   ],
