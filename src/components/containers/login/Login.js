@@ -1,57 +1,75 @@
+/* eslint-disable object-curly-newline,global-require */
 import React, { Component } from 'react'
 import PropsTypes from 'prop-types'
 import { connect } from 'react-redux'
 
 // Style
-import { Content, Text, View, Button } from 'native-base'
+import { ImageBackground, Image } from 'react-native'
+import { Content, Text, View, Button, Icon, Toast } from 'native-base'
+import LoginStyle from './LoginStyle'
 
 // Actions
-import { loginRequest } from '../../../redux/actions/AuthActions'
+import { facebookLoginRequest } from '../../../redux/actions/AuthActions'
 
 @connect(state => ({
   authorized: state.auth.authorized,
-}), { loginRequest })
+}), { facebookLoginRequest })
 export default class Login extends Component {
   static propTypes = {
     authorized: PropsTypes.bool,
     onLogin: PropsTypes.func.isRequired,
-    loginRequest: PropsTypes.func,
+    facebookLoginRequest: PropsTypes.func,
   }
 
   static defaultProps = {
     authorized: false,
-    loginRequest: () => {},
-  }
-
-  componentWillMount() {
-    const { authorized, onLogin } = this.props
-    if (authorized) onLogin()
+    facebookLoginRequest: () => {},
   }
 
   connectToNexgon = () => {
-    this.props.loginRequest()
-    this.props.onLogin()
+    this.props.facebookLoginRequest()
+      .then(() => {
+        this.props.onLogin()
+      })
+      .catch((error) => {
+        Toast.show({
+          text: error.message,
+          buttonText: 'Okay',
+          duration: 10000,
+        })
+      })
   }
 
   noUserRender = () =>
     (
-      <View>
-        <Text>No user connected !</Text>
-        <Button
-          iconLeft
-          full
-          info
-          onPress={() => { this.connectToNexgon() }}
-        >
-          <Text>Connect To NextGon</Text>
-        </Button>
-      </View>
+      <ImageBackground
+        source={require('../../../../assets/images/backgrounds/nextgon-bk.jpg')}
+        style={LoginStyle.imageContainer}
+      >
+        <View style={LoginStyle.viewLogo}>
+          <Image source={require('../../../../assets/images/logos/next-logo.png')} />
+        </View>
+        <View style={LoginStyle.fbButton}>
+          <Button
+            iconLeft
+            className="button"
+            block
+            onPress={() => { this.connectToNexgon() }}
+          >
+            <Icon name="logo-facebook" />
+            <Text>Connect To NextGon!</Text>
+          </Button>
+        </View>
+        <View style={{ alignSelf: 'center' }}>
+          <Text style={{ color: '#FFF' }}>Login with Facebook</Text>
+        </View>
+      </ImageBackground>
     )
 
   render() {
     const { authorized } = this.props
     return (
-      <Content>
+      <Content contentContainerStyle={LoginStyle.content}>
         { !authorized && this.noUserRender() }
       </Content>
     )

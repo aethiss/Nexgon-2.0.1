@@ -1,7 +1,7 @@
 import { createReducer } from '../../lib/ReducerHelper'
 
 const initialState = {
-  user: '',
+  user: {},
   authorized: false,
   country: false,
   number: false,

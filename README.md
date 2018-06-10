@@ -27,9 +27,10 @@ React-Native Personal Project
 8) Tab Navigation (Login/Register/Dashboard/Debugger) ✔
 
 9) Registration (FB login) / Login
+    - FbSDK (https://developers.facebook.com/docs/react-native/)
 
 10) Permanent Local Storage / Auto-Login / Debugger Clean All
-    - Add Persistent state to navigation
+    - Add Persistent state to navigation    
 
 11) Group Creation
 

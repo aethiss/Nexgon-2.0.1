@@ -1,3 +1,5 @@
+import { facebookLoginManager } from '../../libs/FacebookSDK'
+
 export function resetLogin() {
   return {
     type: 'RESET_AUTH',
@@ -13,7 +15,13 @@ function setLogin(user) {
 
 // Handlers
 
-export function loginRequest() {
-  // TODO: just mock atm!
-  return setLogin({ name: 'Enzo Dono', lastLogin: 'yesterday' })
+export function facebookLoginRequest() {
+  return dispatch => new Promise((resolve, reject) => {
+    facebookLoginManager()
+      .then((result) => {
+        dispatch(setLogin(result))
+        resolve(result)
+      })
+      .catch(err => reject(new Error(err)))
+  })
 }

@@ -1,3 +1,4 @@
+/* eslint-disable no-use-before-define */
 import React from 'react'
 import PropsTypes from 'prop-types'
 
@@ -7,21 +8,13 @@ import { Container } from 'native-base'
 // Containers
 import Login from '../containers/login/Login'
 
-// Commons
-import HeaderCommon from '../commons/header/HeaderCommon'
-
 const LoginScreenView = ({ navigation }) => {
   const onLogin = () => {
-    navigation.push('DashBoard')
+    navigation.push('Register')
   }
 
   return (
     <Container>
-      <HeaderCommon
-        navigation={navigation}
-        title="Login"
-        leftAction="noop"
-      />
       <Login onLogin={onLogin} />
     </Container>
   )
