@@ -6,8 +6,12 @@ import RegisterStackRouter from './RegisterStackRouter'
 
 // ScreenViews
 import LoginScreenView from '../components/screens/LoginScreenView'
+import InitApp from '../components/InitApp'
 
 export default createStackNavigator({
+  Init: {
+    screen: InitApp,
+  },
   Login: {
     screen: LoginScreenView,
   },

@@ -9,9 +9,8 @@ import { Container } from 'native-base'
 import Register from '../containers/register/Register'
 
 const RegisterScreenView = ({ navigation }) => {
-  const onRegister = (phone) => {
-    console.log(phone)
-    navigation.push('DashBoard')
+  const onRegister = (location) => {
+    navigation.navigate(location)
   }
 
   return (
