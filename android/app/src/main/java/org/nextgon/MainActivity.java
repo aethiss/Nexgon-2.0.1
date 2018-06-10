@@ -1,4 +1,4 @@
-package com.client202;
+package org.nextgon;
 
 import com.facebook.react.ReactActivity;
 
@@ -10,6 +10,6 @@ public class MainActivity extends ReactActivity {
      */
     @Override
     protected String getMainComponentName() {
-        return "client202";
+        return "nextgon";
     }
 }

@@ -1,4 +1,4 @@
-package com.client202;
+package org.nextgon;
 
 import android.app.Application;
 
