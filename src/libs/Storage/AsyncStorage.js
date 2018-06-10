@@ -15,13 +15,13 @@ export function _setStorageItem(key, value) {
     AsyncStorage.setItem(key, JSON.stringify(value))
       .then((err) => {
         if (err) {
-          reject(err)
+          reject(new Error(err))
         } else {
-          resolve('set storage item')
+          resolve({ key, saved: true })
         }
       })
-      .catch(() => {
-        reject('error set up storage item')
+      .catch((err) => {
+        reject(new Error(err))
       })
   })
 }

@@ -4,16 +4,27 @@ const initialState = {
   user: {},
   authorized: false,
   country: false,
-  number: false,
+  phone: false,
+  isNewUser: true,
 }
 
 const authReducer = createReducer(initialState, {
   RESET_AUTH: () => initialState,
-  SET_AUTH: (currentState, { user }) => (
+  SET_AUTH: (currentState, { user, authorized }) => (
     {
       ...currentState,
-      authorized: true,
       user: { ...user },
+      authorized,
+    }
+  ),
+  SET_LOGGED_USER: (currentState, { user, phone, country }) => (
+    {
+      ...currentState,
+      user: { ...user },
+      phone,
+      country: { ...country },
+      isNewUser: false,
+      authorized: true,
     }
   ),
 })

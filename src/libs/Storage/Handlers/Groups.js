@@ -1,10 +1,10 @@
 import { _getStorageItem, _setStorageItem } from '../AsyncStorage'
 
+// eslint-disable-next-line import/prefer-default-export
 export function mergeNewGroup(group) {
   let groupList = []
 
   return new Promise((resolve, reject) => {
-
     _getStorageItem('groups').then((res) => {
       if (res === null) { // empty storage key
         groupList = [group]

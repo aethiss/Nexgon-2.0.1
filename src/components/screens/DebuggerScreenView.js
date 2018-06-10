@@ -2,23 +2,22 @@ import React from 'react'
 import PropsTypes from 'prop-types'
 
 // Style
-import { Container, Content, View, Text } from 'native-base'
+import { Container } from 'native-base'
 
 // Commons
 import HeaderCommon from '../commons/header/HeaderCommon'
+
+// Container
+import Debugger from '../containers/debugger/Debugger'
 
 const DebuggerScreenView = ({ navigation }) => (
   <Container>
     <HeaderCommon
       navigation={navigation}
       title="Debugger"
-      leftAction="back"
+      leftAction="none"
     />
-    <Content>
-      <View>
-        <Text>Debugger Screen</Text>
-      </View>
-    </Content>
+    <Debugger navigation={navigation} />
   </Container>
 )
 

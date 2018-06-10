@@ -13,10 +13,12 @@ import { facebookLoginRequest } from '../../../redux/actions/AuthActions'
 
 @connect(state => ({
   authorized: state.auth.authorized,
+  isNewUser: state.auth.isNewUser,
 }), { facebookLoginRequest })
 export default class Login extends Component {
   static propTypes = {
     authorized: PropsTypes.bool,
+    isNewUser: PropsTypes.bool.isRequired,
     onLogin: PropsTypes.func.isRequired,
     facebookLoginRequest: PropsTypes.func,
   }
@@ -29,7 +31,9 @@ export default class Login extends Component {
   connectToNexgon = () => {
     this.props.facebookLoginRequest()
       .then(() => {
-        this.props.onLogin()
+        let navigateTo = 'Dashboard'
+        if (this.props.isNewUser) navigateTo = 'Register'
+        this.props.onLogin(navigateTo)
       })
       .catch((error) => {
         Toast.show({

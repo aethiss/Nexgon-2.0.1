@@ -11,6 +11,9 @@ import { ImageBackground, TouchableOpacity } from 'react-native'
 import { Content, Text, View, Button, Icon, Thumbnail } from 'native-base'
 import RegisterStyle from './RegisterStyle'
 
+// Action
+import { registerNewUser } from '../../../redux/actions/AuthActions'
+
 // Form Registration Manager
 const { Form } = t.form
 // clone the default stylesheet
@@ -65,12 +68,13 @@ const defaultCounrty = {
 
 @connect(state => ({
   user: state.auth.user,
-}), {})
+}), { registerNewUser })
 export default class Register extends Component {
   static propTypes = {
     user: PropsTypes.object.isRequired,
     onRegister: PropsTypes.func.isRequired,
     navigation: PropsTypes.object.isRequired,
+    registerNewUser: PropsTypes.func.isRequired,
   }
 
   registerToNexgon = () => {
@@ -78,7 +82,9 @@ export default class Register extends Component {
     const phoneValue = this.refs.form.getValue()
     const countrySelected = this.props.navigation.state.params || defaultCounrty
     if (phoneValue && phoneValue !== null) {
-      this.props.onRegister(`00${countrySelected.phone}${phoneValue.phoneNumber}`)
+      const deviceNumber = `00${countrySelected.phone}${phoneValue.phoneNumber}`
+      this.props.registerNewUser(deviceNumber, countrySelected)
+      this.props.onRegister('DashBoard')
     }
   }
 
