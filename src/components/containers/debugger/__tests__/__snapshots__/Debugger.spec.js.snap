@@ -5,6 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <AnatomyExample
+    resetLogin={[Function]}
     user={false}
   />,
   Symbol(enzyme.__renderer__): Object {
@@ -20,23 +21,51 @@ ShallowWrapper {
     "nodeType": "class",
     "props": Object {
       "children": Array [
-        <Styled(Content)>
+        <Styled(ViewNB)
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginTop": 50,
+            }
+          }
+        >
           <Styled(Text)>
-            Debugger: 
+            User Logged : 
           </Styled(Text)>
-        </Styled(Content)>,
-        <Styled(Footer)>
-          <Styled(FooterTab)>
-            <Styled(Button)
-              full={true}
-            >
-              <Styled(Text)>
-                Footer
-              </Styled(Text)>
-            </Styled(Button)>
-          </Styled(FooterTab)>
-        </Styled(Footer)>,
+        </Styled(ViewNB)>,
+        <Styled(ViewNB)
+          style={
+            Object {
+              "alignSelf": "center",
+              "marginTop": 50,
+            }
+          }
+        >
+          <Styled(Button)
+            block={true}
+            danger={true}
+            iconLeft={true}
+            onPress={[Function]}
+            style={
+              Object {
+                "padding": 10,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="alert"
+            />
+            <Styled(Text)>
+              RESET APP
+            </Styled(Text)>
+          </Styled(Button)>
+        </Styled(ViewNB)>,
       ],
+      "contentContainerStyle": Object {
+        "flex": 1,
+        "flexDirection": "column",
+        "justifyContent": "center",
+      },
       "virtual": undefined,
     },
     "ref": null,
@@ -47,8 +76,12 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "children": <Styled(Text)>
-            Debugger: 
+            User Logged : 
           </Styled(Text)>,
+          "style": Object {
+            "alignSelf": "center",
+            "marginTop": 50,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -58,15 +91,15 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": Array [
-              "Debugger: ",
-              false,
+              "User Logged : ",
+              undefined,
             ],
             "virtual": undefined,
           },
           "ref": null,
           "rendered": Array [
-            "Debugger: ",
-            false,
+            "User Logged : ",
+            undefined,
           ],
           "type": [Function],
         },
@@ -77,15 +110,28 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "class",
         "props": Object {
-          "children": <Styled(FooterTab)>
-            <Styled(Button)
-              full={true}
-            >
-              <Styled(Text)>
-                Footer
-              </Styled(Text)>
-            </Styled(Button)>
-          </Styled(FooterTab)>,
+          "children": <Styled(Button)
+            block={true}
+            danger={true}
+            iconLeft={true}
+            onPress={[Function]}
+            style={
+              Object {
+                "padding": 10,
+              }
+            }
+          >
+            <Styled(Icon)
+              name="alert"
+            />
+            <Styled(Text)>
+              RESET APP
+            </Styled(Text)>
+          </Styled(Button)>,
+          "style": Object {
+            "alignSelf": "center",
+            "marginTop": 50,
+          },
           "virtual": undefined,
         },
         "ref": null,
@@ -94,42 +140,50 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(Button)
-              full={true}
-            >
+            "block": true,
+            "children": Array [
+              <Styled(Icon)
+                name="alert"
+              />,
               <Styled(Text)>
-                Footer
-              </Styled(Text)>
-            </Styled(Button)>,
+                RESET APP
+              </Styled(Text)>,
+            ],
+            "danger": true,
+            "iconLeft": true,
+            "onPress": [Function],
+            "style": Object {
+              "padding": 10,
+            },
             "virtual": undefined,
           },
           "ref": null,
-          "rendered": Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "children": <Styled(Text)>
-                Footer
-              </Styled(Text)>,
-              "full": true,
-              "virtual": undefined,
-            },
-            "ref": null,
-            "rendered": Object {
+          "rendered": Array [
+            Object {
               "instance": null,
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": "Footer",
+                "name": "alert",
                 "virtual": undefined,
               },
               "ref": null,
-              "rendered": "Footer",
+              "rendered": null,
               "type": [Function],
             },
-            "type": [Function],
-          },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": "RESET APP",
+                "virtual": undefined,
+              },
+              "ref": null,
+              "rendered": "RESET APP",
+              "type": [Function],
+            },
+          ],
           "type": [Function],
         },
         "type": [Function],
@@ -144,23 +198,51 @@ ShallowWrapper {
       "nodeType": "class",
       "props": Object {
         "children": Array [
-          <Styled(Content)>
+          <Styled(ViewNB)
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginTop": 50,
+              }
+            }
+          >
             <Styled(Text)>
-              Debugger: 
+              User Logged : 
             </Styled(Text)>
-          </Styled(Content)>,
-          <Styled(Footer)>
-            <Styled(FooterTab)>
-              <Styled(Button)
-                full={true}
-              >
-                <Styled(Text)>
-                  Footer
-                </Styled(Text)>
-              </Styled(Button)>
-            </Styled(FooterTab)>
-          </Styled(Footer)>,
+          </Styled(ViewNB)>,
+          <Styled(ViewNB)
+            style={
+              Object {
+                "alignSelf": "center",
+                "marginTop": 50,
+              }
+            }
+          >
+            <Styled(Button)
+              block={true}
+              danger={true}
+              iconLeft={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "padding": 10,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="alert"
+              />
+              <Styled(Text)>
+                RESET APP
+              </Styled(Text)>
+            </Styled(Button)>
+          </Styled(ViewNB)>,
         ],
+        "contentContainerStyle": Object {
+          "flex": 1,
+          "flexDirection": "column",
+          "justifyContent": "center",
+        },
         "virtual": undefined,
       },
       "ref": null,
@@ -171,8 +253,12 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "children": <Styled(Text)>
-              Debugger: 
+              User Logged : 
             </Styled(Text)>,
+            "style": Object {
+              "alignSelf": "center",
+              "marginTop": 50,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -182,15 +268,15 @@ ShallowWrapper {
             "nodeType": "class",
             "props": Object {
               "children": Array [
-                "Debugger: ",
-                false,
+                "User Logged : ",
+                undefined,
               ],
               "virtual": undefined,
             },
             "ref": null,
             "rendered": Array [
-              "Debugger: ",
-              false,
+              "User Logged : ",
+              undefined,
             ],
             "type": [Function],
           },
@@ -201,15 +287,28 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <Styled(FooterTab)>
-              <Styled(Button)
-                full={true}
-              >
-                <Styled(Text)>
-                  Footer
-                </Styled(Text)>
-              </Styled(Button)>
-            </Styled(FooterTab)>,
+            "children": <Styled(Button)
+              block={true}
+              danger={true}
+              iconLeft={true}
+              onPress={[Function]}
+              style={
+                Object {
+                  "padding": 10,
+                }
+              }
+            >
+              <Styled(Icon)
+                name="alert"
+              />
+              <Styled(Text)>
+                RESET APP
+              </Styled(Text)>
+            </Styled(Button)>,
+            "style": Object {
+              "alignSelf": "center",
+              "marginTop": 50,
+            },
             "virtual": undefined,
           },
           "ref": null,
@@ -218,42 +317,50 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <Styled(Button)
-                full={true}
-              >
+              "block": true,
+              "children": Array [
+                <Styled(Icon)
+                  name="alert"
+                />,
                 <Styled(Text)>
-                  Footer
-                </Styled(Text)>
-              </Styled(Button)>,
+                  RESET APP
+                </Styled(Text)>,
+              ],
+              "danger": true,
+              "iconLeft": true,
+              "onPress": [Function],
+              "style": Object {
+                "padding": 10,
+              },
               "virtual": undefined,
             },
             "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "children": <Styled(Text)>
-                  Footer
-                </Styled(Text)>,
-                "full": true,
-                "virtual": undefined,
-              },
-              "ref": null,
-              "rendered": Object {
+            "rendered": Array [
+              Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": "Footer",
+                  "name": "alert",
                   "virtual": undefined,
                 },
                 "ref": null,
-                "rendered": "Footer",
+                "rendered": null,
                 "type": [Function],
               },
-              "type": [Function],
-            },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": "RESET APP",
+                  "virtual": undefined,
+                },
+                "ref": null,
+                "rendered": "RESET APP",
+                "type": [Function],
+              },
+            ],
             "type": [Function],
           },
           "type": [Function],

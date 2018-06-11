@@ -13,6 +13,7 @@ import RegisterStyle from './RegisterStyle'
 
 // Action
 import { registerNewUser } from '../../../redux/actions/AuthActions'
+import ModalStandard from '../../commons/modal/ModalStandard'
 
 // Form Registration Manager
 const { Form } = t.form
@@ -36,21 +37,6 @@ const options = {
     },
   },
 }
-
-// DEBUG
-// const userFake = {
-//   email: 'aethiss@gmail.com',
-//   id: '1522353421192808',
-//   picture: {
-//     data: {
-//       is_silhouette: false,
-//       width: 50,
-//       url: 'https://platform-lookaside.fbsbx.com/platform/profilepic/?asid=1522353421192808&height=50&width=50&ext=1528801485&hash=AeSYuZUP3NoY8ZKj',
-//       height: 50,
-//     },
-//   },
-//   name: 'Enzo D\'Onofrio',
-// }
 
 const defaultCounrty = {
   name: 'United Kingdom',
@@ -77,6 +63,13 @@ export default class Register extends Component {
     registerNewUser: PropsTypes.func.isRequired,
   }
 
+  constructor() {
+    super()
+    this.state = {
+      modalVisible: false,
+    }
+  }
+
   registerToNexgon = () => {
     // eslint-disable-next-line react/no-string-refs
     const phoneValue = this.refs.form.getValue()
@@ -92,6 +85,12 @@ export default class Register extends Component {
     this.props.navigation.navigate('Countries')
   }
 
+  toggleModal = () => {
+    this.setState({
+      modalVisible: !this.state.modalVisible,
+    })
+  }
+
   render() {
     const { user, navigation } = this.props
     const countrySelected = navigation.state.params || defaultCounrty
@@ -101,6 +100,11 @@ export default class Register extends Component {
           source={require('../../../../assets/images/backgrounds/nextgon-bk.jpg')}
           style={RegisterStyle.imageContainer}
         >
+          <ModalStandard
+            onClose={this.toggleModal}
+            modalVisible={this.state.modalVisible}
+            trasparent
+          />
           <View style={RegisterStyle.viewRegister}>
             <Thumbnail large source={{ uri: user.picture.data.url }} />
             <Text style={RegisterStyle.textRegister}>{user.name}</Text>
@@ -115,7 +119,9 @@ export default class Register extends Component {
           </View>
           <View style={RegisterStyle.ViewRegisterAlign}>
             <View style={RegisterStyle.ViewRegisterForm}>
-              <Icon name="alert" style={{ color: '#4C79FF' }} />
+              <TouchableOpacity onPress={() => this.toggleModal()}>
+                <Icon name="alert" style={{ color: '#4C79FF' }} />
+              </TouchableOpacity>
             </View>
             <View style={RegisterStyle.ViewRegisterForm}>
               <Form type={Number} options={options} ref="form" />

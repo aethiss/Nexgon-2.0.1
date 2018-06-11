@@ -7,8 +7,9 @@ module.exports = function (wallaby) {
       { pattern: "src/**/*.snap", load: false, instrument: false },
     ],
     tests: [
-      'src/redux/**/__tests__/*.spec.js?(x)',
-      'src/libs/**/__tests__/*.spec.js?(x)'
+      'src/redux/**/__tests__/*.spec.js',
+      'src/libs/**/__tests__/*.spec.js',
+      'src/components/**/__tests__/*.spec.js'
     ],
 
     env: {

@@ -24,16 +24,18 @@ React-Native Personal Project
 7) Route Navigation ✔ (v0.7)
     - https://reactnavigation.org/docs/en/getting-started.html
 
-8) Tab Navigation (Login/Register/Dashboard/Debugger) ✔
+8) Tab Navigation (Login/Register/Dashboard/Debugger) ✔ (0.8)
 
 9) Registration (FB login) / Login ✔
-    - FbSDK (https://developers.facebook.com/docs/react-native/)
+    - FbSDK (https://developers.facebook.com/docs/react-native/) ✔ (0.9) ALPHA STABLE
 
-10) Permanent Local Storage / Auto-Login / Debugger Clean All
+10) Permanent Local Storage / Auto-Login / Debugger Clean All ✔ (0.9.1)
     -  Reset all device (DEBUG)
 
 11) Group Creation
 
-13) Maps & Locations
+13) RealTime Group Chat
 
-14) RealTime Group Chat
+14) Maps & Locations
+
+15) Events Managments
