@@ -4,7 +4,7 @@ exports[`<Debugger> Enzyme Shallow renders as expected 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AnatomyExample
+  Symbol(enzyme.__unrendered__): <Debugger
     resetLogin={[Function]}
     user={false}
   />,

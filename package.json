@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "postinstall": "rndebugger-open",
-    "test": "jest"
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "native-base": "^2.4.5",
@@ -25,7 +25,6 @@
     "@babel/core": "^7.0.0-beta.49",
     "@babel/preset-env": "^7.0.0-beta.49",
     "babel-eslint": "^8.2.3",
-    "babel-jest": "^23.0.1",
     "babel-preset-react-native": "^4.0.0",
     "babel-preset-react-native-stage-0": "^1.0.1",
     "enzyme": "^3.3.0",
