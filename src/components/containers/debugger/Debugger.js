@@ -16,7 +16,7 @@ import DebuggerStyle from './DebuggerStyle'
 @connect(state => ({
   user: state.auth.user,
 }), { resetLogin })
-export default class AnatomyExample extends Component {
+export default class Debugger extends Component {
   static propTypes = {
     user: PropsTypes.object.isRequired,
     navigation: PropsTypes.object.isRequired,
