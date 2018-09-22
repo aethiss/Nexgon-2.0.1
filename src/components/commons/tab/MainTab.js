@@ -21,7 +21,7 @@ const MainTab = ({ navigation }) => {
         <Button
           onPress={() => { navigation.navigate('Groups') }}
         >
-          <Icon active={isActive('Groups')} name="camera" />
+          <Icon active={isActive('Groups')} name="ios-people" />
         </Button>
         <Button
           onPress={() => { navigation.navigate('Debugger') }}

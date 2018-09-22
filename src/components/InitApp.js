@@ -66,7 +66,7 @@ export default class InitApp extends Component {
     console.log('-------- lets start !!! ----------')
     getUserFromStorage()
       .then((data) => {
-        if (data === null) { // No user
+        if (!data || data === null) { // No user
           navigation.navigate('Login')
         } else {
           this.props.setUserFromStore(JSON.parse(data))

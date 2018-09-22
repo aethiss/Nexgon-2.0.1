@@ -1,0 +1,185 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`@Messages Actions C new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions CRE new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions CREA new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions CREAT new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions CREATE  new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions CREATE : new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions CREATE new Messages Group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions Create new Messages Group 1`] = `
+Object {
+  "groupId": "55566TTGGF",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions Create new Messages Group 2`] = `
+Object {
+  "groupId": "44455",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions R all messages from group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "REMOVE_ALL_MESSAGE_FROM_GROUP",
+}
+`;
+
+exports[`@Messages Actions REMO all messages from group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "REMOVE_ALL_MESSAGE_FROM_GROUP",
+}
+`;
+
+exports[`@Messages Actions REMOV all messages from group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "REMOVE_ALL_MESSAGE_FROM_GROUP",
+}
+`;
+
+exports[`@Messages Actions REMOVE : all messages from group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "REMOVE_ALL_MESSAGE_FROM_GROUP",
+}
+`;
+
+exports[`@Messages Actions REMOVE all messages from group 1`] = `
+Object {
+  "groupId": "44455",
+  "type": "REMOVE_ALL_MESSAGE_FROM_GROUP",
+}
+`;
+
+exports[`@Messages Actions Remove all messages from group 1`] = `
+Object {
+  "groupId": "",
+  "type": "CREATE_NEW_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions S Messages Group 1`] = `
+Object {
+  "store": Object {
+    "_type": "Message",
+    "body": Object {
+      "text": "Porkamadonna !",
+    },
+    "createdAt": "2017-09-23T15:28:17.358Z",
+    "from": Object {
+      "_type": "User",
+      "id": "TTRREE55AAAA",
+      "userName": "DbPass",
+      "userPicture": "c://home/ios",
+    },
+    "id": "GHJJA44443AA654343",
+    "to": Object {
+      "_type": "Group",
+      "id": "ABCDE123435",
+    },
+  },
+  "type": "SET_ALL_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions SET : Messages Group 1`] = `
+Object {
+  "store": Array [],
+  "type": "SET_ALL_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions SET Messages Group 1`] = `
+Object {
+  "store": Object {
+    "_type": "Message",
+    "body": Object {
+      "text": "Porkamadonna !",
+    },
+    "createdAt": "2017-09-23T15:28:18.005Z",
+    "from": Object {
+      "_type": "User",
+      "id": "TTRREE55AAAA",
+      "userName": "DbPass",
+      "userPicture": "c://home/ios",
+    },
+    "id": "GHJJA44443AA654343",
+    "to": Object {
+      "_type": "Group",
+      "id": "ABCDE123435",
+    },
+  },
+  "type": "SET_ALL_GROUP_MESSAGES",
+}
+`;
+
+exports[`@Messages Actions SET: Messages Group 1`] = `
+Object {
+  "store": Object {
+    "_type": "Message",
+    "body": Object {
+      "text": "Porkamadonna !",
+    },
+    "createdAt": "2017-09-23T15:28:55.729Z",
+    "from": Object {
+      "_type": "User",
+      "id": "TTRREE55AAAA",
+      "userName": "DbPass",
+      "userPicture": "c://home/ios",
+    },
+    "id": "GHJJA44443AA654343",
+    "to": Object {
+      "_type": "Group",
+      "id": "ABCDE123435",
+    },
+  },
+  "type": "SET_ALL_GROUP_MESSAGES",
+}
+`;

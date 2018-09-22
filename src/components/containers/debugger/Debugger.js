@@ -31,6 +31,7 @@ export default class Debugger extends Component {
 
   render() {
     const { user } = this.props
+    if (!user.name) return null
     return (
       <Content contentContainerStyle={DebuggerStyle.content}>
         <View style={DebuggerStyle.viewArea}>

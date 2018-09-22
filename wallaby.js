@@ -9,7 +9,7 @@ module.exports = function (wallaby) {
     tests: [
       'src/redux/**/__tests__/*.spec.js',
       'src/libs/**/__tests__/*.spec.js',
-      'src/components/**/__tests__/*.spec.js'
+      // 'src/components/**/__tests__/*.spec.js'
     ],
 
     env: {
