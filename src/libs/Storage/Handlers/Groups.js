@@ -15,8 +15,8 @@ export function mergeNewGroup(group) {
       _setStorageItem('groups', JSON.stringify(groupList)).then(() => {
         resolve(groupList)
       })
-        .catch(err => reject(err))
+        .catch(err => reject(new Error(err)))
     })
-      .catch(err => reject(err))
+      .catch(err => reject(new Error(err)))
   })
 }

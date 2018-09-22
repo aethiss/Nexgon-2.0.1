@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`[Actions Groups] Create New Group 1`] = `[Function]`;
+
+exports[`[Actions Groups] Delete Group) 1`] = `[Function]`;
+
+exports[`[Actions Groups] Error on group creation 1`] = `[Function]`;

@@ -15,6 +15,9 @@ import RegisterStyle from './RegisterStyle'
 import { registerNewUser } from '../../../redux/actions/AuthActions'
 import ModalStandard from '../../commons/modal/ModalStandard'
 
+// Languages Const
+import eng from '../../../constant/languages/eng'
+
 // Form Registration Manager
 const { Form } = t.form
 // clone the default stylesheet
@@ -93,6 +96,7 @@ export default class Register extends Component {
 
   render() {
     const { user, navigation } = this.props
+    if (!user.name) return null
     const countrySelected = navigation.state.params || defaultCounrty
     return (
       <Content contentContainerStyle={RegisterStyle.content}>
@@ -104,6 +108,7 @@ export default class Register extends Component {
             onClose={this.toggleModal}
             modalVisible={this.state.modalVisible}
             trasparent
+            text={eng.phoneHelper}
           />
           <View style={RegisterStyle.viewRegister}>
             <Thumbnail large source={{ uri: user.picture.data.url }} />

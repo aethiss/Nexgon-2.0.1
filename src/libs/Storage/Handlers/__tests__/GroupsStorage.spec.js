@@ -43,9 +43,10 @@ describe('@Groups local storage', () => {
 
   it('Save/merge new group ERROR', () => {
     _getStorageItem.mockImplementation(() =>
-      new Promise((resolve, reject) => reject({ error: 'cannot save group storage' })))
+      new Promise((resolve, reject) => reject(new Error('cannot save group storage'))))
     expect.assertions(1)
-    return mergeNewGroup(newGroup).catch(e =>
-      expect(e).toMatchObject({ error: 'cannot save group storage' }))
+    return mergeNewGroup(newGroup).catch((err) => {
+      expect(err.message).toMatch('cannot save group storage')
+    })
   })
 })
